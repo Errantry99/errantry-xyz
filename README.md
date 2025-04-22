@@ -1,46 +1,148 @@
-# Getting Started with Create React App
+# Errantry.xyz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive website built with React, TypeScript, and Firebase. This project showcases a clean, accessible design with smooth animations and a focus on user experience.
 
-## Available Scripts
+![Errantry.xyz Screenshot](public/logo192.png)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- **Modern React Architecture**: Built with React 19 and TypeScript for type safety
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Firebase Integration**: Backend services powered by Firebase (Authentication, Firestore, Storage)
+- **Accessible UI**: WCAG compliant components with proper ARIA attributes
+- **Performance Optimized**: Fast loading times and smooth animations
+- **SEO Friendly**: Proper meta tags and semantic HTML structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js (v16 or higher)
+- npm (v7 or higher)
+- Firebase account
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/errantry.xyz.git
+   cd errantry.xyz
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Set up environment variables:
+   Create a `.env` file in the root directory with the following variables:
+   ```
+   REACT_APP_FIREBASE_API_KEY=your_api_key_here
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+   REACT_APP_FIREBASE_PROJECT_ID=your_project_id_here
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+   REACT_APP_FIREBASE_APP_ID=your_app_id_here
+   REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id_here
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+5. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📁 Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+errantry.xyz/
+├── public/                  # Static files
+├── src/                     # Source files
+│   ├── assets/              # Images, fonts, and other static assets
+│   │   └── backgrounds/     # Background images
+│   ├── components/          # React components
+│   │   ├── common/          # Reusable UI components
+│   │   ├── layout/          # Layout components (Header, Footer)
+│   │   └── sections/        # Page section components
+│   ├── firebase/            # Firebase configuration
+│   ├── styles/              # Global styles and CSS variables
+│   ├── App.tsx              # Main App component
+│   └── index.tsx            # Entry point
+├── .env                     # Environment variables
+├── firebase.json            # Firebase configuration
+├── package.json             # Project dependencies
+└── tsconfig.json            # TypeScript configuration
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🛠️ Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [React](https://reactjs.org/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Firebase](https://firebase.google.com/) - Backend services
+- [React Router](https://reactrouter.com/) - Routing
+- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) - Theming and styling
 
-## Learn More
+## 📱 Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Layout Components
+- **Header**: Navigation bar with responsive menu
+- **Footer**: Site footer with links and copyright information
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Section Components
+- **Hero**: Landing section with main call-to-action
+- **About**: Information about the project or company
+- **Projects**: Showcase of projects or work
+- **Contact**: Contact form with Firebase integration
+
+### Common Components
+- **Button**: Reusable button component with multiple variants
+
+## 🔧 Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App
+
+## 📦 Deployment
+
+This project is configured for deployment on Firebase Hosting:
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+
+2. Deploy to Firebase:
+   ```bash
+   firebase deploy
+   ```
+
+## 🔐 Environment Variables
+
+The following environment variables are required:
+
+| Variable | Description |
+|----------|-------------|
+| REACT_APP_FIREBASE_API_KEY | Firebase API key |
+| REACT_APP_FIREBASE_AUTH_DOMAIN | Firebase authentication domain |
+| REACT_APP_FIREBASE_PROJECT_ID | Firebase project ID |
+| REACT_APP_FIREBASE_STORAGE_BUCKET | Firebase storage bucket |
+| REACT_APP_FIREBASE_MESSAGING_SENDER_ID | Firebase messaging sender ID |
+| REACT_APP_FIREBASE_APP_ID | Firebase app ID |
+| REACT_APP_FIREBASE_MEASUREMENT_ID | Firebase measurement ID |
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Authors
+
+- **Your Name** - *Initial work* - [Your GitHub](https://github.com/yourusername)
+
+## 🙏 Acknowledgments
+
+- [Create React App](https://github.com/facebook/create-react-app) for the initial project setup
+- [Firebase](https://firebase.google.com/) for backend services
+- [React Router](https://reactrouter.com/) for routing
