@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import heroBackground from './assets/backgrounds/hero-background.png';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       </header>
       
       <main>
-        <section className="hero">
+        <section className="hero" style={{ backgroundImage: `url(${heroBackground})` }}>
           <h1>Welcome to Errantry.xyz</h1>
           <p>Exploring the digital landscape with purpose and creativity</p>
         </section>
