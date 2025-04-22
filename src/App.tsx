@@ -17,7 +17,7 @@ function App() {
       </header>
       
       <main>
-        <section className="hero" style={{ backgroundImage: `url(${heroBackground})` }}>
+        <section className="hero">
           <h1>Welcome to Errantry.xyz</h1>
           <p>Exploring the digital landscape with purpose and creativity</p>
         </section>
