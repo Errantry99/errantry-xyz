@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import BlogEditor from './components/admin/BlogEditor';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
             <div className="logo">Errantry.xyz</div>
             <div className="nav-links">
               <Link to="/">Home</Link>
-              <Link to="/admin/blog">Blog Editor</Link>
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
@@ -21,7 +19,6 @@ function App() {
         </header>
         
         <Routes>
-          <Route path="/admin/blog" element={<BlogEditor />} />
           <Route path="/" element={
             <main>
               <section className="hero">
