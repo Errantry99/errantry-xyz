@@ -18,9 +18,13 @@ const BackgroundTransition: React.FC = () => {
       );
 
       if (newActiveImage !== activeImage) {
+        console.log(`Transitioning to image ${newActiveImage} at ${scrollPercentage}% scroll`);
         setActiveImage(newActiveImage);
       }
     };
+
+    // Initial call to set the correct image
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -28,10 +32,22 @@ const BackgroundTransition: React.FC = () => {
 
   return (
     <div className="background-container">
-      <div className={`background-image bg-first ${activeImage === 1 ? 'active' : ''}`} />
-      <div className={`background-image bg-second ${activeImage === 2 ? 'active' : ''}`} />
-      <div className={`background-image bg-third ${activeImage === 3 ? 'active' : ''}`} />
-      <div className={`background-image bg-fourth ${activeImage === 4 ? 'active' : ''}`} />
+      <div 
+        className={`background-image bg-first ${activeImage === 1 ? 'active' : ''}`}
+        style={{ backgroundImage: `url(${require('../../assets/backgrounds/first.png')})` }}
+      />
+      <div 
+        className={`background-image bg-second ${activeImage === 2 ? 'active' : ''}`}
+        style={{ backgroundImage: `url(${require('../../assets/backgrounds/second.png')})` }}
+      />
+      <div 
+        className={`background-image bg-third ${activeImage === 3 ? 'active' : ''}`}
+        style={{ backgroundImage: `url(${require('../../assets/backgrounds/third.png')})` }}
+      />
+      <div 
+        className={`background-image bg-fourth ${activeImage === 4 ? 'active' : ''}`}
+        style={{ backgroundImage: `url(${require('../../assets/backgrounds/fourth.png')})` }}
+      />
     </div>
   );
 };
